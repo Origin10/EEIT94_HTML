@@ -4,22 +4,26 @@
 		<title>Html test</title>
 		<meta name="author" content="HTML,CSS,JavaScript"/>
 		<meta name="keywords" content="HTML,CSSS,JavaScript">
-		
+
 		<meta http-equiv="Refresh" content="300"/>
 		<!-- 即時資訊更新頻率 -->
 		<!-- <meta http-equiv="Refresh" content="3; URL=Second.html"/> -->
 		<!-- 3秒之後轉址 -->
 		<style>
-			
+			body{
+			 /*direction: rtl;    unicode-bidi: embed;*/
+			font-size: 2em;
+			 }
 		</style>
-		<script>
-			
-		</script>
-		
-		
+		<script></script>
+
 	</head>
 	<body>
-		Here's First.
+
+		<p id="1">
+			Here's First.
+		</p>
+<input type="text" name="firstname" value="Mickey">
 		<h1>Code.</h1>
 		<h2>Code.</h2>
 		<h3>Code.</h3>
@@ -27,52 +31,127 @@
 		<hr/>
 		<span>在inline裡<del>不可以</del>放入<em>Block</em>元素</span>
 		<span>在Block元素裡可以放入<em>inline</em>和<em>Block</em></span>
+		
+		
 		<hr/>
-		
-		<h3>有上下換行的是Block元素</h3>
-		aaa<div style="background: orangered">I'm div.</div>bbb
+
+		<h3>有上下換行的是Block元：h家族系列 p div ol ul li dl dt dd</h3>
+		<h4>會多空一行是樣式特性</h4>
+		aaa
+		<div style="background: orangered">
+			I'm div.
+		</div>
+		bbb
 		<hr />
-		aaa<p style="background: lightgreen">I'm paragraph.</p>bbb
+		aaa
+		<p style="background: lightgreen">
+			I'm paragraph.
+		</p>
+		bbb
 		<hr />
-		aaa<span style="background: lightblue">I'm paragraph.</span>bbb
-		
+		aaa<span style="background: lightblue">I'm span.</span>bbb
+
 		<h2>清單元素List</h2>
-		
+
 		<span>項目清單<em>(ul)</em>，內部可以放入序號清單<em>(ol)</em></span>
 		<ul>
-		 <li>About</li>
-		 <li>Works
-		 	<ol>
-		 		<li>Sleep</li>
-		 		<li>Naping</li>
-		 		<li>Plying</li>
-		 	</ol>
-		 	</li>
-		 <li>Video</li>
-		 <li>Links</li>
-		 <li>Story</li>
+			<li>
+				About
+			</li>
+			<li>
+				Works
+				<ol>
+					<li>
+						Sleep
+					</li>
+					<li>
+						Naping
+					</li>
+					<li>
+						Plying
+					</li>
+				</ol>
+			</li>
+			<li>
+				Video
+			</li>
+			<li>
+				Links
+			</li>
+			<li>
+				Story
+			</li>
 		</ul>
-		
 		<pre> 
-			<code>
-			<ul>
-		 <li>About</li>
-		 <li>Works
-		 	<ol>
-		 		<li>Sleep</li>
-		 		<li>Naping</li>
-		 		<li>Plying</li>
-		 	</ol>
-		 	</li>
-		 <li>Video</li>
-		 <li>Links</li>
-		 <li>Story</li>
-		</ul>
-		</code> 
-		</pre>
+			
+		&lt;ul&gt;<br/>		 &lt;li&gt;About&lt;/li&gt;<br/>		 &lt;li&gt;Works<br/>		 	&lt;ol&gt;<br/>		 		&lt;li&gt;Sleep&lt;/li&gt;<br/>		 		&lt;li&gt;Naping&lt;/li&gt;<br/>		 		&lt;li&gt;Plying&lt;/li&gt;<br/>		 	&lt;/ol&gt;<br/>		 	&lt;/li&gt;<br/>		 &lt;li&gt;Video&lt;/li&gt;<br/>		 &lt;li&gt;Links&lt;/li&gt;<br/>		 &lt;li&gt;Story&lt;/li&gt;<br/>		&lt;/ul&gt;
 		
+		</pre>		
 		
+
 		
+ <h2>定義清單 dl、dt、dd</h2>
+
+		<h3>台灣程序員</h3>
+		<dl>
+			<dt>
+				職業(我是dt)
+			</dt>
+			<dd>
+				杯水車薪(我是dd)
+			</dd>
+			<dd>
+				肝苦耐勞(我是dd)
+			</dd>
+		</dl>
+
+		<span style="font-size: large">超連結的a也是<em>InLine</em>喔：</span>
+		<a href="#1">Here's First↑</a>
+		<br />
+		<span>連結到不同資料夾須加<em>子資料夾名稱</em>或是<em>回上一資料夾指令../</em></span>
+
+		<br />
+		<h1>喝咖啡，可能有助減緩老化</h1>
+
+		<a href="http://www.cw.com.tw/article/article.action?id=5080833"><img src="images/coffee.jpg" alt="讓你喝不到也看不到" title="喝咖啡，可能有助減緩老化"/></a>
+
+		<a href="http://www.cw.com.tw/article/article.action?id=5080833"><img src="images/logo.png" /><span>←說的</span></a>
+		<br />
+
+		<h2>figure/figcaption(Block)</h2>
+
+		<figure style="text-align: center;box-shadow:3px 3px 5px 6px #cccccc">
+			<img src="images/p1.jpg" />
+			<img src="images/p2.jpg" />
+
+			<figcaption>
+				我們都是紫色的食物
+			</figcaption>
+
+		</figure>
+
+		<h2>div/span</h2>
+
+		<div style="text-align: center">
+			<img src="images/p1.jpg" />
+			<img src="images/p2.jpg" />
+
+			<br />
+			<span> 我們都是紫色的食物 </span>
+
+		</div>
+		
+		<h2>一個div包兩個div/span</h2>
+
+		<div style="text-align: center">
+			<div style="border:9px solid red;display:inline"><img src="images/p1.jpg" /></div>
+			<div style="display:inline"><img src="images/p2.jpg" /></div>
+
+			<br />
+			<span> 我們都是紫色的食物 </span>
+
+		</div>
+
 	</body>
-	
+
 </html>

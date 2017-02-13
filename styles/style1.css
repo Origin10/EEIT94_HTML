@@ -1,0 +1,27 @@
+body{
+	font-size:1.5em;
+	text-align: center;
+}
+div.titlebox{
+	width: 100%;
+}
+
+div.leftContent{
+	width: 100px;
+	height: 100px;
+	background-color: #ADD8E6;
+	border:3px solid #C0C0C0;
+	box-shadow: .5em .5em .5em .5em #C0C0C0;
+	display: inline;
+	
+}
+
+div.rightContent{
+	width: 100px;
+	height: 100px;
+	background-color: #EE82EE;
+	border:3px solid #C0C0C0;
+	box-shadow: .5em .5em .5em .5em #C0C0C0;
+	display: inline;
+	
+}
