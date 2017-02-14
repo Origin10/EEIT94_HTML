@@ -1,39 +1,124 @@
-<html>
-<head>
-	<meta charset="UTF-8" />
-	<title>CSS練習</title>
-<link rel="stylesheet" href="styles/style1.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-</head>
-<body>
-	<section>
-	<div class="box issue">
-		<div class="box leftContent">
-			<h1>I'm title Left.</h1>
-		</div>
-		<div class="box rightContent">
-			<h1>I'm title Right.</h1>
+<!DOCTYPE html>
+html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS練習</title>
+		<link rel="stylesheet" href="styles/style1.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<style type="text/css" media="screen">
+		</style>>
+
+	</head>
+	<body>
+
+		<!-- <rect id="A" x="33" y="34" fill="#FF6CC4" stroke="#C30D23" stroke-width="3" width="75" height="75"/> -->
+		<section>
+			<div class="box issue">
+				<div class="box leftContent">
+					<h1></h1>
+				</div>
+				<div class="box rightContent">
+					<h1></h1>
+				</div>
 			</div>
-	</div>
-	</section>
-	<section>
-	<div class="box issue">
-		<div class="box leftContent">
-			<h1>I'm title Left. 02</h1>
-		</div>
-		<div class="box rightContent">
-			<h1>I'm title Right. 02</h1>
+		</section>
+		<section>
+			<div class="box issue">
+				<div class="box leftContent">
+					<h1></h1>
+				</div>
+				<div class="box rightContent">
+					<h1></h1>
+				</div>
 			</div>
-	</div>
-	</section>
-	<section>
-	<div class="box issue">
-		<div class="box leftContent">
-			<h1>I'm title Left. 03</h1>
-		</div>
-		<div class="box rightContent">
-			<h1>I'm title Right. 03</h1>
-		</div>
-	</div>
-	</section>
-</body>
+		</section>
+		<section>
+			<div class="box issue">
+				<div class="box leftContent">
+					<h1>TitleL</h1>
+					<form action="#" method="get" accept-charset="utf-8" >
+						<div class="stl1">
+							<label class="label1" for="account1">姓名：</label>
+							<input type="text" name="account1" id="account1" value="guest"/>
+						</div>
+						<div class="stl1">
+							<label class="label1" for="pwd1">密碼：</label>
+							<input type="password" name="pwd1" id="pwd1" />
+						</div>
+						<div class="stl1">
+							<label class="label1" for="memo1">意見：</label>
+							<textarea name="memo1" id="memo1" rows="8" cols="100"></textarea>
+						</div>
+						<p class="sub">
+							<input type="submit" value="Continue &rarr;"/>
+						</p>
+					</form>
+
+				</div>
+				<div class="box rightContent">
+					<h1>TitleR</h1>
+					<form  action="#" method="get" accept-charset="utf-8">
+						<div class="stl1" >
+							<label class="label1" class="ArgumentMemo" for="account2">姓名：</label>
+							<input type="text" name="account2" id="account2"value="guest"/>
+						</div>
+						<div class="stl1">
+							<label class="label1" class="ArgumentMemo" for="pwd2">密碼：</label>
+							<input type="password2" name="pwd2" id="pwd2" />
+						</div>
+						<div class="stl1">
+							<label class="label1" class="ArgumentMemo" for="memo2">意見：</label>
+							<textarea name="memo2" id="memo2" rows="8" cols="100"></textarea>
+						</div>
+						<hr />
+						<div class="stl1">
+							<label class="ArgumentMemo">性別:</label>
+								<input class="label1" type="radio" name="gender" value="male"/>
+								男
+								<input class="label1" type="radio" name="gender" value="female"/>
+								女
+						</div>
+						<br />
+						<div>
+							<label class="ArgumentMemo">興趣:</label>
+								<input class="label1" type="checkbox" name="hobby" value="music" id="hobby"/>
+								音樂
+								<input class="label1" type="checkbox" name="hobby" value="sport" id="hobby"/>
+								運動
+								<input class="label1" type="checkbox" name="hobby" value="reading" id="hobby"/>
+								閱讀
+								<input class="label1" type="checkbox" name="hobby" value="movie" id="hobby"/>
+								電影 
+
+						</div>
+						<br />
+						<fieldset>
+						  <legend>地址資料 <em>(必填)</em></legend>
+						  
+						  <select name="LivingIn" multiple="">
+						  	<option value="TPE">台北</option>
+						  	<option value="TPH">新北</option>
+						  	<option value="TYC" selected="">桃園</option>
+						  	<option value="HSC">新竹</option>
+						  </select>
+													 
+						</fieldset>
+						
+						<br />
+						
+						<fieldset >
+							<label class="label1">照片:</label><input type="file" name="file1" id="file1"/>
+						 
+						</fieldset>
+						
+						<p class="sub">
+							<div class="stl1">
+							  <input type="submit" value="Continue &rarr;"/>
+							</div>
+							
+						</p>
+					</form>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="zh-tw">
 	<head>
 		<title>Html test</title>
@@ -10,12 +10,25 @@
 		<!-- <meta http-equiv="Refresh" content="3; URL=Second.html"/> -->
 		<!-- 3秒之後轉址 -->
 		<style>
-			body{
-			 /*direction: rtl;    unicode-bidi: embed;*/
-			font-size: 2em;
-			 }
+			body {
+				/*direction: rtl;    unicode-bidi: embed;*/
+				font-size: 2em;
+			}
+			.ulListType {
+				list-style-type: none;
+				/*list-style-type: square;*/
+				list-style-image:url('images/loading.png');
+
+			}
+			.in {
+				list-style-position:inside;
+			}
+			.out {
+				list-style-position:outside;
+			}
+
+			
 		</style>
-		<script></script>
 
 	</head>
 	<body>
@@ -23,7 +36,7 @@
 		<p id="1">
 			Here's First.
 		</p>
-<input type="text" name="firstname" value="Mickey">
+		<input type="text" name="firstname" value="Mickey">
 		<h1>Code.</h1>
 		<h2>Code.</h2>
 		<h3>Code.</h3>
@@ -31,8 +44,7 @@
 		<hr/>
 		<span>在inline裡<del>不可以</del>放入<em>Block</em>元素</span>
 		<span>在Block元素裡可以放入<em>inline</em>和<em>Block</em></span>
-		
-		
+
 		<hr/>
 
 		<h3>有上下換行的是Block元：h家族系列 p div ol ul li dl dt dd</h3>
@@ -54,11 +66,11 @@
 		<h2>清單元素List</h2>
 
 		<span>項目清單<em>(ul)</em>，內部可以放入序號清單<em>(ol)</em></span>
-		<ul>
+		<ul class="ulListType">
 			<li>
 				About
 			</li>
-			<li>
+			<li class="in">
 				Works
 				<ol>
 					<li>
@@ -67,8 +79,8 @@
 					<li>
 						Naping
 					</li>
-					<li>
-						Plying
+					<li class="out">
+						Playing
 					</li>
 				</ol>
 			</li>
@@ -86,7 +98,7 @@
 			
 		&lt;ul&gt;<br/>		 &lt;li&gt;About&lt;/li&gt;<br/>		 &lt;li&gt;Works<br/>		 	&lt;ol&gt;<br/>		 		&lt;li&gt;Sleep&lt;/li&gt;<br/>		 		&lt;li&gt;Naping&lt;/li&gt;<br/>		 		&lt;li&gt;Plying&lt;/li&gt;<br/>		 	&lt;/ol&gt;<br/>		 	&lt;/li&gt;<br/>		 &lt;li&gt;Video&lt;/li&gt;<br/>		 &lt;li&gt;Links&lt;/li&gt;<br/>		 &lt;li&gt;Story&lt;/li&gt;<br/>		&lt;/ul&gt;
 		
-		</pre>		
+		</pre>				
 		
 
 		
@@ -140,18 +152,20 @@
 			<span> 我們都是紫色的食物 </span>
 
 		</div>
-		
+
 		<h2>一個div包兩個div/span</h2>
 
 		<div style="text-align: center">
-			<div style="border:9px solid red;display:inline"><img src="images/p1.jpg" /></div>
-			<div style="display:inline"><img src="images/p2.jpg" /></div>
+			<div style="border:9px solid red;display:inline"><img src="images/p1.jpg" />
+			</div>
+			<div style="display:inline"><img src="images/p2.jpg" />
+			</div>
 
 			<br />
 			<span> 我們都是紫色的食物 </span>
 
 		</div>
-
+		<script></script>
 	</body>
 
 </html>

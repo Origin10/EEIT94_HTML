@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Table</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			table {
+				width: 400px;
+				border: 3px solid green;
+				border-collapse: collapse;
+				margin: 0 auto;
+			}
+			td, th {
+				border: 1px solid red;
+				padding: 4px;
+				text-align: center;
+				vertical-align: bottom;
+			}
+			thead {
+				background-color: #894563;
+			}
+			tbody td:hover {
+				background-color: #89F563;
+			}
+
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>
+				<h4>表格練習 我的標籤名稱叫做caption</h4>
+			</caption>
+			<thead>
+				<tr>
+					<th>a</th>
+					<th>b</th>
+					<th>c</th>
+					<th>d</th>
+				</tr>
+				<tr>
+					<th colspan="2">a</th>
+					<th colspan="2">b</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td rowspan="2">4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<h4>Foot</h4>
+			</tfoot>
+		</table>
+
+		<hr>
+		<h3>div裡的文字垂直對齊</h3>
+		<div style="width:200px;height:100px;border:1px solid red;line-height:100px; float: left">
+			高度固定
+		</div>
+		<hr>
+		<div style="width:200px;border:1px solid green;padding-top:50px;padding-bottom:50px; float: right">
+			高度不固定
+		</div>
+	</body>
+</html>
