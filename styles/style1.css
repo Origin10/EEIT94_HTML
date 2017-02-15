@@ -41,6 +41,16 @@ fieldset {
 	text-align: center;
 }
 
+#position {
+	text-align: center;
+	font-size: 1em;
+	color: orange;
+	border: 1px dashed #BBB;
+	background-color: white;
+	position: relative;
+	z-index: 1;
+}
+
 div.leftContent {
 	width: 48%;
 	/*height: 100 vw;*/
@@ -71,5 +81,14 @@ em {
 	width: 450px;
 	margin: 20px;
 	text-align: center;
+}
+
+input[type="range"]{
+	-webkit-appearance: none;
+	overflow: hidden; /* 限定範圍 */
+	width: 75%;
+	height: 5%;
+	outline: none; /* 避免點選會有藍線或虛線 */
+	background: #008DCA;
 }
 

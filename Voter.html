@@ -1,0 +1,170 @@
+- <!doctype html>
+-
+<html>
+	-
+	<head>
+		-
+		<meta charset="utf-8" >
+		- <title></title>
+		- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		-
+		<style type="text/css">
+			
+			body, div, a, span {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.g-pt-10 {
+				padding-top: 10px;
+			}
+			-
+			.g-ta-c {
+				text-align: center;
+			}
+			-
+			.g-fz-16 {
+				font-size: 16px;
+			}
+			-
+			.g-d-b {
+				display: block;
+			}
+			-
+			.g-f-l {
+				float: left;
+			}
+			-
+			.g-c-w {
+				color: #fff;
+			}
+			-
+			.g-fz-18 {
+				font-size: 18px;
+			}
+			-
+			.g-d-ib {
+				display: inline-block;
+			}
+			-
+			.g-cf:after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+			-
+			.g-cf {
+				zoom: 1;
+			}
+
+			-
+			a:hover {
+				text-decoration: none;
+				color: #ff0000;
+			}
+			-
+			.box {
+				width: 705px;
+				height: 242px;
+				margin: 50px auto;
+				background: #f5f9fe;
+				border: 1px solid #6888a1;
+			}
+			-
+			div.mid {
+				width: 330px;
+				margin: 20px auto;
+			}
+			-
+			a.support {
+				width: 124px;
+				height: 73px;
+				background: #008DCA url("support.png");
+				margin-right: 80px;
+			}
+			-
+			a.oppose {
+				width: 124px;
+				height: 73px;
+				background: #F78106 url("oppose.png");
+			}
+			-
+			.g-mt-45 {
+				margin-top: 45px;
+			}
+			-
+			span.line {
+				width: 380px;
+				height: 17px;
+				margin: 0 auto;
+				background: #008DCA;
+			}
+			-
+			span.line2 {
+				width: 80px;
+				height: 17px;
+				background: #F78106;
+			}
+
+			-
+		</style>
+		-
+	</head>
+	-
+	<body>
+
+		-
+		<div class="box">
+			- <h3 class="g-pt-10 g-ta-c g-fz-16">如果微信将会进行收费，你将会怎么办？</h3>
+			-
+			<div class="mid g-cf">
+				- <a class="support g-d-b g-f-l" onclick="support();"> -
+				<p class="g-ta-c g-c-w g-fz-18 g-mt-45" id="supamount">
+					0
+				</p> - </a>
+				- <a class="oppose g-d-b g-f-l" onclick="oppose();"> -
+				<p class="g-ta-c g-c-w g-fz-18 g-mt-45" id="oppamount">
+					0
+				</p> - </a>
+				-
+			</div>
+			-
+			<div class="g-ta-c">
+				-
+				<p class="g-d-ib" id="suppercent">
+					0
+				</p>
+				%
+				- <span class="line g-d-ib g-cf"><span class="line2 g-d-ib g-f-l" id="supline"></span></span>
+				-
+				<p class="g-d-ib" id="opppercent">
+					0
+				</p>
+				%
+				-
+			</div>
+			-
+		</div>
+		-
+		<script type="text/javascript">
+						- var sup=parseInt($('#supamount').text());
+			- var opp=parseInt($('#oppamount').text());
+
+			- function support(){
+			- sup+=1;
+			- $('#supamount').text(sup.toString());
+			- $('#suppercent').text(((sup/(sup+opp))*100).toFixed(0).toString());
+			- $('#opppercent').text((100-(sup/(sup+opp))*100).toFixed(0).toString());
+			- $('#supline').attr("style","width:"+380*(sup/(sup+opp))+"px");
+			- }
+			- function oppose(){
+			- opp+=1;
+			- $('#oppamount').text(opp.toString());
+			- $('#suppercent').text(((sup/(sup+opp))*100).toFixed(0).toString());
+			- $('#opppercent').text((100-(sup/(sup+opp))*100).toFixed(0).toString());
+			- $('#supline').attr("style","width:"+380*(sup/(sup+opp))+"px");
+			- }
+			-
+		</script>
+		-
+	</body>

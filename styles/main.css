@@ -1,0 +1,105 @@
+body {
+	font-family: "Goudy Stout";
+	font-size: 80%;
+	color: #777;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+h2 {
+	line-height: 1.5em;
+}
+
+#allpage {
+	width: 1024px;
+	margin: 0 auto;
+}
+#menu {
+	background-color: #ACD6FF;
+	overflow: auto;
+}
+
+#menu li:first-child {
+	border-left: 2px solid #CCC;
+}
+
+#menu li {
+	list-style: none;
+	float: left;
+	width: 7em;
+	border-right: 2px solid #CCC;
+}
+
+#menu li a {
+	display: block;
+	width: 100%;/*用來填滿li*/
+	line-height: 2.5em;
+	text-decoration: none;
+	text-align: center;
+}
+#menu li a:hover {
+	color: #E3E455;
+	background-color: #666;
+}
+#logo {
+	height: 250px;
+	overflow: hidden;
+}
+.title {
+	background-color: lightgreen;
+	padding: 10px;
+	color: #8F8F8F;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #25DAAA;
+}
+
+article {
+	width: 70%;
+	float: left;
+}
+
+article section {
+	margin: 10px;
+	border-bottom: 3px solid #555;
+}
+
+.ulWork {
+	list-style: decimal inside;
+}
+
+aside {
+	margin: 10px;
+	width: 25%;
+	float: right;
+}
+
+.midConter {
+	overflow: auto;/*避免邊線跑掉*/
+}
+
+footer {
+	clear: both;
+	background-color: #ACD6FF;
+	text-align: center;
+	line-height: 2.5em;
+}
+
+#planet {
+			width: 50%;
+			padding: 20px;
+			margin: 5px;
+			float: left;
+			border: .3em solid skyblue;
+		}
+		#planet img{
+			width: 100%;
+		}
+		#name {
+			font-size: 4em;
+			float: left;
+			color: orange;
+			line-height: 80px;
+		}
+

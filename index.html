@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<title>Nothing</title>
+		<meta charset="utf-8" />
+		<!-- <meta http-equiv="refresh" content="3;url=second.html"> -->
+		<style>
+		@import url("styles/main.css");
+		</style>
+		<script>
+			//javascript code
+		</script>
+	</head>
+	<body>
+		<div id="allpage">
+			<header>
+				<nav>
+					<ul id="menu">
+						<li>
+							<a href="index.html">回首頁</a>
+						</li>
+						<li>
+							<a href="StarWar.html">公司簡介</a>
+						</li>
+						<li>
+							<a href="">產品介紹</a>
+						</li>
+						<li>
+							<a href="">合作對象</a>
+						</li>
+						<li>
+							<a href="">聯絡窗口</a>
+
+						</li>
+					</ul>
+				</nav>
+				<div id="logo"><img src="images/banner.jpg" alt="banner!"/>
+				</div>
+			</header>
+			
+			<div id="midConter">
+			  
+			
+			<article>
+				<section>
+					<h2 class="title">關於 position 屬性 static</h2>
+					<p>
+						為了設計出更複雜的版面配置，我們需要探討關於 position 這個屬性。它有一大堆的屬性值，且這些屬性值不但很難懂，也特別難記憶。讓我們一個一個介紹吧，不過也建議你把這頁加入到我的最愛（書籤）裡。
+					</p>
+					<p>
+						static 是預設值。任何套用 position: static; 的元素「不會被特別定位」在頁面上特定位置，而是照著瀏覽器預設的配置自動排版在頁面上，所有其他的屬性值都代表該元素會被定位在頁面上。
+					</p>
+				</section>
+				<section>
+					<h2>relative</h2>
+					<p>
+						relative 表現的和 static 一樣，除非你增加了一些額外的屬性。
+					</p>
+					<p>
+						在一個設定為 position: relative 的元素內設定 top 、 right 、 bottom 和 left 屬性，會使其元素「相對地」調整其原本該出現的所在位置，而不管這些「相對定位」過的元素如何在頁面上移動位置或增加了多少空間，都不會影響到原本其他元素所在的位置。
+					</p>
+					<ul class="ulWork">
+						<li>
+							top
+						</li>
+						<li>
+							right
+						</li>
+						<li>
+							bottom
+						</li>
+						<li>
+							left
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>改變 HTML5 range 樣式的兩種方法</h2>
+					<p>第一種方法是純 CSS 的做法，由於 range 是 input 的一種類型，我們無法用傳統的 CSS 編輯方法來修改樣式，這裡必須要使用到-webkit-appearance這個特殊屬性，這是 webkit 特有的屬性，代表使用系統預設的外觀，可惜 W3C 到寫這篇文章的時候，都還沒有納入規範 ( 不然 webkit 簡直是神呀 )，只要我們將這個屬性設為none，那麼原本 range 的樣式就不會呈現了，這時我們只要加入自己的背景、陰影...等樣式，就可以看到樣式被換過來了。</p>
+				</section>
+			</article>
+			<aside>
+				<section>
+					<h2 class="title">歷史回顧</h2>
+					<dt>2011年11月3號
+						<dd>人類發現第一顆哺乳類的蛋</dd>
+					</dt>
+					<dt>2011年11月3號
+						<dd>人類發現第一顆哺乳類的蛋</dd>
+					</dt>
+					<dt>2011年11月3號
+						<dd>人類發現第一顆哺乳類的蛋</dd>
+					</dt>
+					<dt>2011年11月3號
+						<dd>人類發現第一顆哺乳類的蛋</dd>
+					</dt>
+					<dt>2011年11月3號
+						<dd>人類發現第一顆哺乳類的蛋</dd>
+					</dt>
+				</section>
+			</aside>
+			</div>
+			<footer><p>除臭襪子專賣，馬上解決腳臭問題的除臭襪子！腳臭就穿Footer除臭襪，保證不會臭的除臭襪</p></footer>
+		</div>
+	</body>
+
+</html>

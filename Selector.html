@@ -30,6 +30,13 @@
 		}
 
 	</style>
+	
+	<script type="text/javascript" charset="utf-8">
+		function postionChange() {
+                var n = document.getElementById('rangeInput').value;
+                document.getElementById('rangeText').value = n;
+            }
+	</script>
 
 	<body>
 		<button class="button">
@@ -49,6 +56,15 @@
 			<div class="box leftContent"></div>
 			<div class="box rightContent"></div>
 		</div>
+		
+		<label for="">歲數</label><input type="number" name="textAge" value="" id="" min="0" max="120"/>
+		<label for="">歲數</label><input type="range" name="textAge" value="" id="" min="0" max="2"/>
+		<label for="">顏色</label><input type="color" name="textAge" value="" id=""/>
+		<div>
+             Range:<input type="range" id="rangeInput" min="0" max="2" step="1" onchange="postionChange()" />
+             <input id="rangeText" />
+         </div>
+		<input type="text" name="some_name" value="" id="some_name"/>
 	</body>
 </html>
 
